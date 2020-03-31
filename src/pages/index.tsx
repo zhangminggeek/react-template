@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './index.less';
 
-export default function() {
+export default () => {
   return (
-    <div className={styles.container}>
-      index
+    <div>
+      <h1 className={styles.title}>Page index</h1>
     </div>
   );
-}
+};
