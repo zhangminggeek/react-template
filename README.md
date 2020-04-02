@@ -53,6 +53,15 @@ YOUR PROJECT MODULES
 
 提测完成后，需要合并最新代码到 `dev` 和 `master`。
 
+### pre
+该分支为 **预发环境部署分支**。
+
+`自动部署` `手动更新`
+
+提供 **QC** 部门测试，所有提测后问题在此分支检出 `bugfix/xxx` 进行。
+
+提测完成后，需要合并最新代码到 `dev` 和 `master`。
+
 ## Git 提交规范
 
 项目内已配置 `commitizen`，配合 `husky` 和 `commitlint` 对提交信息进行检测。
