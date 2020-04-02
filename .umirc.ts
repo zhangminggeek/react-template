@@ -10,6 +10,9 @@ export default defineConfig({
     theme: 'pro',
     locale: false,
   },
+  dynamicImport: {
+    loading: '@/components/PageLoading/index',
+  },
   routes: [
     {
       path: '/',
