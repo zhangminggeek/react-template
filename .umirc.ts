@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  dva: {},
   layout: {
     name: 'Ant Design',
     theme: 'pro',
