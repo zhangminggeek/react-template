@@ -8,6 +8,7 @@ export default () => {
   return (
     <div>
       <h1 className={styles.title}>index</h1>
+      <p>{process.env.TEST_ENV}</p>
     </div>
   );
 };
