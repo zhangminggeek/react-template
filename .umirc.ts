@@ -1,11 +1,19 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  layout: {
+    name: 'Ant Design',
+    theme: 'pro',
+    locale: false,
+  },
   routes: [
     {
       path: '/',
-      component: '@/layouts/index',
-      routes: [{ path: '/', component: '@/pages/index' }],
+      component: '@/pages/index',
+      menu: {
+        name: '首页',
+        icon: 'HomeOutlined',
+      },
     },
   ],
 });
