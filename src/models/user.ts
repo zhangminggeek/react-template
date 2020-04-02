@@ -28,6 +28,7 @@ const UserModel: UserModelType = {
     login: false,
   },
   effects: {
+    // 获取用户信息
     *fetchUser(_, { call, put }) {
       const response = yield call(getUserInfo);
       yield put({
@@ -37,10 +38,15 @@ const UserModel: UserModelType = {
     },
   },
   reducers: {
-    setUserInfo(state, action) {
+    // 修改用户信息
+    setUserInfo(
+      state = { login: false, info: {} },
+      { payload },
+    ): UserModelState {
       return {
+        login: false,
         ...state,
-        info: action.payload || {},
+        info: payload || {},
       };
     },
   },
