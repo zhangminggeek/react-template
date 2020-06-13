@@ -1,3 +1,3 @@
-export async function getInitialState() {
-  // initialState
-}
+import React from 'react';
+import '@/styles/index.less';
+import '@/styles/reset.less';

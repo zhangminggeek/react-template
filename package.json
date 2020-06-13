@@ -3,7 +3,9 @@
   "scripts": {
     "start": "umi dev",
     "build": "umi build",
-    "build:test": "dotenv -e .env.test umi build",
+    "build:test": "cross-env UMI_ENV=test umi build",
+    "build:pre": "cross-env UMI_ENV=pre umi build",
+    "build:production": "cross-env UMI_ENV=production umi build",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage"
@@ -22,6 +24,7 @@
   "dependencies": {
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.0.16",
+    "axios": "^0.19.2",
     "lint-staged": "^10.0.7",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
